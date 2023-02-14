@@ -5,7 +5,7 @@ function ItemList({ items, onItemClick }) {
   return (
     <ul>
       {items.map((item) => (
-        <li key={item.id} onClick={() => onItemClick(item)}>
+        <li className="productCard" key={item.id} onClick={() => onItemClick(item)}>
           <Link to={`/item/${item.id}`}>{item.name}</Link>
         </li>
       ))}

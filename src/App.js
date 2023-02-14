@@ -6,7 +6,7 @@ import Products from './components/ProductsPage';
 import Contact from './components/ContactPage';
 import Navbar from './components/Navbar';
 import ItemDetailContainer from './containers/ItemDetailContainer';
-
+import './style.css'
 
 function App() {
   return (
@@ -17,9 +17,8 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/products" element={<Products />} />
         <Route path="/about" element={<AboutPage />} />
-        <Route path="/item/:id" render={({ match }) => (
-            <ItemDetailContainer itemId={match.params.id} />
-          )} />
+        <Route path="/item/:itemId" component={ItemDetailContainer} />
+
       </Routes>
     </BrowserRouter>
   );

@@ -1,5 +1,11 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
 .navbar {
-    background-color: red;
+    background-color: grey;
     display: flex;
     justify-content: space-between;
     padding: 20px;
@@ -8,9 +14,31 @@
   .navbar a {
     color: white;
     text-decoration: none;
-    margin-right: 20px;
+    margin-right: 30px;
+  }
+
+  .navbar-nav{
+    display: inline-flex;
+    list-style: none;
   }
   
-  .container {
-    padding: 20px;
+  h1{
+    text-align: center;
+  }
+
+.homeArticle{
+  height: 500px;
+  width: 1000px;
+  margin: auto;
+  background-color: aquamarine;
+}
+
+  .productCard{
+    height: 150px;
+    width: 150px;
+    background-color: bisque;
+    margin: 20px;
+    list-style: none;
+    border: grey solid 1px;
+    border-radius: 5px;
   }
