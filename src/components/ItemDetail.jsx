@@ -1,9 +1,9 @@
 import React from "react";
 
 function ItemDetail({ item = {} }) {
+  console.log(item);
   return (
-    <div>
-    <p>holaaaaa</p>
+    <div className="productDetailContainer">
       <h2>{item.name}</h2>
       <p>{item.description}</p>
       <p>Category: {item.category}</p>

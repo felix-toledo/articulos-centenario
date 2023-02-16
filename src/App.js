@@ -17,8 +17,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/products" element={<Products />} />
         <Route path="/about" element={<AboutPage />} />
-        <Route path="/item/:itemId" component={ItemDetailContainer} />
-
+        <Route path="/item/:itemId" element={<ItemDetailContainer/>} />
       </Routes>
     </BrowserRouter>
   );

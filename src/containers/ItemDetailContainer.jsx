@@ -6,8 +6,10 @@ import products from "../data/products.json";
 function ItemDetailContainer() {
   const [item, setItem] = useState({});
   const { itemId } = useParams();
+  console.log("item fuera use " + itemId);
 
   useEffect(() => {
+    console.log("item " + itemId);
     setItem(products.find(item => item.id === Number(itemId)));
   }, [itemId]);
 
