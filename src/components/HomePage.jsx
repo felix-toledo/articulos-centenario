@@ -4,8 +4,8 @@ import ItemListContainer from '../containers/ItemListContainer';
 const HomePage = () => {
   return (
     <div>
-      <h1>Home Page</h1>
       <div className="homeArticle">
+        <h1>Home Page</h1>
         <p>asdasdasdsaadssdasdasadsdasadsadsda</p>
       </div>
       <ItemListContainer/>

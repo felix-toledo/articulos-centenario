@@ -11,14 +11,16 @@ import './style.css'
 function App() {
   return (
     <BrowserRouter>
-      <Navbar />
+    <Navbar />
+      <div className="body">
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/products" element={<Products />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/item/:itemId" element={<ItemDetailContainer/>} />
-      </Routes>
+        </Routes>
+      </div>
     </BrowserRouter>
   );
 }

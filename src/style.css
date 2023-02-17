@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
 *{
   padding: 0;
   margin: 0;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-family:Roboto;
 }
 
 .navbar {
@@ -9,53 +11,91 @@
     color: white;
   }
   
-  .navbar a {
+  .navbar a, .navbar-brand {
     color: white;
     text-decoration: none;
+    font-family:Roboto;
     margin-right: 30px;
   }
 
   .navbar-nav{
-    display: inline-flex;
+    display: flex;
     list-style: none;
   }
   
 .navbar-top{
   position:fixed;
   top:0px;
-  width: 100vw;
+  min-width: 100%;
+  max-width: 100%;
   height: 50px;
   padding: 0px 20px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   background-color: #DD1C2D;
   z-index: 3;
-  box-shadow: 2px 11px 14px -3px rgba(0,0,0,0.77);
--webkit-box-shadow: 2px 11px 14px -3px rgba(0,0,0,0.77);
--moz-box-shadow: 2px 11px 14px -3px rgba(0,0,0,0.77);
+  box-shadow: 2px 5px 10px -4px rgba(0,0,0,0.77);
 }
+
+  .logo-title{
+    background-image: url("./media/logo_components/logo_title_white.png");
+    width: 293px;
+    height: 35px;
+  }
+
+  .logo-house{
+    position: absolute;
+    top: 70px;
+    left: 20px;
+    background-image: url("./media/logo_components/logo_house_white.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 151px;
+    height: 94px;
+  }
+
+  .logo-subtitle{
+    background-image: url("./media/logo_components/logo_subtitle_white.png");
+    width: 219px;
+    height: 20px;
+    position: absolute;
+    top: 70px;
+  }
 
 
 .navbar-bottom{
   margin-top: 50px;
-  width: auto;
+  width: 100%;
   height: 150px;
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   background-color: #DD1C2D;
   align-items: center;
 }
 
-  h1{
-    text-align: center;
-  }
+  
+
+.body{
+  position: absolute;
+  top: 150px;
+  left: 10%;
+  height: auto;
+  width: 80%;
+  background-color: white;
+  box-shadow: -4px 10px 32px -4px rgba(0,0,0,0.7);
+}
 
 .homeArticle{
-  height: 500px;
-  width: 1000px;
-  margin: auto;
-  background-color: aquamarine;
+  color: white;
+  width: 100%;
+  height: 400px;
+  background-image: url("./media/home_article_image.png");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  text-align: center;
 }
 
 .productContainer{
@@ -87,7 +127,7 @@
     transition: all 2s;
   }
 
-  .nav-item:hover{
+  .nav-item:hover, .navbar-brand:hover{
     text-decoration: underline;
     transform: scale(1.05);
   }

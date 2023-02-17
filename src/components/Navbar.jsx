@@ -4,26 +4,28 @@ import { Link } from "react-router-dom";
 const Navbar = () => (
   <nav className="navbar">
   <div className="navbar-bottom">
-  <Link className="navbar-brand" to="/">Inicio</Link>
+  <div className="logo-house"></div>
+  <div className="logo-subtitle"></div>
     <ul className="navbar-nav">
+    <Link className="navbar-brand" to="/">INICIO</Link>
       <li className="nav-item">
-        <Link className="nav-link" to="/products">Productos</Link>
+        <Link className="nav-link" to="/products">PRODUCTOS</Link>
       </li>
       <li className="nav-item">
-        <Link className="nav-link" to="/about">Sobre Nosotros</Link>
+        <Link className="nav-link" to="/about">SOBRE NOSOTROS</Link>
       </li>
       <li className="nav-item">
-        <Link className="nav-link" to="/contact">Contacto</Link>
+        <Link className="nav-link" to="/contact">CONTACTO</Link>
       </li>
     </ul>
   </div>
   <div className="navbar-top">
     <div className="social-media">
-    <p>aca van las redes</p>
+    <p>IG WP</p>
     </div>
-    <h1>CENTENARIO</h1>
+    <div className="logo-title"></div>
     <div className="costumer-info">
-    <p>aca va el carrito</p>
+    <p>COMPRAS</p>
     </div>
   </div>
 </nav>
