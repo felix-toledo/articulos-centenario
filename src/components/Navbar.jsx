@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Navbar = () => (
+const Navbar = ({props}) => (
   <nav className="navbar">
   <div className="navbar-bottom">
   <div className="logo-house"></div>
@@ -25,7 +25,7 @@ const Navbar = () => (
     </div>
     <div className="logo-title"></div>
     <div className="costumer-info">
-    <p>COMPRAS</p>
+      <Link className="user-info" to="/login">Usuario</Link>
     </div>
   </div>
 </nav>

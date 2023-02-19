@@ -6,14 +6,18 @@ import Products from './components/ProductsPage';
 import Contact from './components/ContactPage';
 import Navbar from './components/Navbar';
 import ItemDetailContainer from './containers/ItemDetailContainer';
+import WelcomeLogin from './components/WelcomeLoginPage';
+
 import './style.css'
 
 function App() {
+
   return (
     <BrowserRouter>
-    <Navbar />
-      <div className="body">
+    <Navbar/>
+    <div className="body">
       <Routes>
+        <Route path="/login" element={<WelcomeLogin />} />
         <Route path="/" element={<HomePage />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/products" element={<Products />} />
