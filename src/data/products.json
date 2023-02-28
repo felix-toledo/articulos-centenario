@@ -22,5 +22,21 @@
     "category": "Category 1",
     "categoryId": 1,
     "price": 300
+    },
+    {
+    "id": 4,
+    "name": "Product 4",
+    "description": "This is the description for product 4",
+    "category": "Category 2",
+    "categoryId": 2,
+    "price": 550
+    },
+    {
+    "id": 5,
+    "name": "Product 5",
+    "description": "This is the description for product 5",
+    "category": "Category 1",
+    "categoryId": 1,
+    "price": 550
     }
 ]

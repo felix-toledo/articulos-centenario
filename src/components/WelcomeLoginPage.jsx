@@ -2,10 +2,10 @@ import React from "react";
 import LoginContainer from '../containers/LoginContainer';
 
 
-const WelcomeLogin = () => {
+const WelcomeLogin = (props) => {
   return (
     <div className="welcome-body">
-      <LoginContainer/>
+      <LoginContainer setName={props.setName} />
     </div>
   );
 };

@@ -1,21 +1,21 @@
 import React, { useState } from "react";
 import { useNavigate } from 'react-router-dom';
 
-
-function ItemListContainer() {
+function LoginContainer(props) {
     const [userName, setUserName] = useState('');
     const [userMail, setUserMail] = useState('');
     const [userTelephone, setUserTelephone] = useState('');
     const navigate = useNavigate();
-
-
+  
     const handleSubmit = (e) => {
-        e.preventDefault();
-        console.log('User Name:', userName);
-        console.log('User Mail:', userMail);
-        console.log('User Telephone:', userTelephone);
-        navigate('/');
-    }
+      e.preventDefault();
+      const newName = userName;
+      window.$name = newName;
+      window.$mail = userMail;
+      window.$number = userTelephone;
+      props.setName(newName);
+      navigate("/");
+    };
 
   return (
     <div className="login-container">
@@ -26,11 +26,11 @@ function ItemListContainer() {
             <form onSubmit={handleSubmit}>
                 <label>
                     Nombre:
-                    <input type="text" value={userName} onChange={(e) => setUserName(e.target.value)} />
+                    <input required type="text" value={userName} onChange={(e) => setUserName(e.target.value)} />
                 </label>
                 <label>
                     Mail:
-                    <input type="email" value={userMail} onChange={(e) => setUserMail(e.target.value)} />
+                    <input type="text" value={userMail} onChange={(e) => setUserMail(e.target.value)} />
                 </label>
                 <label>
                     Número de telefono:
@@ -43,4 +43,4 @@ function ItemListContainer() {
   );
 }
 
-export default ItemListContainer;
+export default LoginContainer;
